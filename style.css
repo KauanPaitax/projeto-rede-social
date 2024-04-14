@@ -48,12 +48,12 @@ section.icons img{
     margin: 10px;
     border-radius: 50%;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.432);
-    box-sizing: border-box;
+    box-sizing: border-box; /*Para não mexer nos outros icones assim que receber border*/
 }
 
-section.icons img:hover{
-    border: 2px solid rgba(255, 255, 255, 0.603);
-    transform: translate(-3px, -3px);
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.603);
-    transition: transform 0.3s;
+section.icons img:hover{ /*qunando o mouse passar por cima recebe:*/
+    border: 2px solid rgba(255, 255, 255, 0.603); /*Borda de dois px branca*/
+    transform: translate(-3px, -3px); /*Se move 3px pra cima e direita, dando sensação de destaque*/
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.603); /*Sombra mais forte e maior*/
+    transition: transform 0.3s; /*transform recebe uma transição de 0.3s, dando sensação de movimento*/
 }
